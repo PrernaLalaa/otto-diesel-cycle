@@ -1,44 +1,58 @@
-# otto-diesel-cycle
-A comparative study highlights the trade-offs and advantages of each cycle under varying conditions, offering insights into internal combustion engine efficiency and design optimization.
-Otto and Diesel Cycle Analyzer 🚗⚡
+# Thermodynamic Cycles
 
-This project provides an in-depth thermodynamic analysis of Otto and Diesel cycles using MATLAB. It allows users to input parameters and visualize how changes affect cycle performance.
+This repository contains MATLAB codes for analyzing and simulating the **Otto Cycle** (Spark Ignition engine) and **Diesel Cycle** (Compression Ignition engine). These are fundamental thermodynamic cycles used to model internal combustion engines.  
 
-🔑 Features
+---
 
-Calculates key performance metrics:
+## 📌 Features  
 
-Thermal efficiency
+- Calculates **state variables** (P, V, T) at all major cycle points  
+- Computes **cycle efficiency, heat addition, heat rejection, and net work done**  
+- Plots **P–V diagram** of the cycle  
+- Generates a **Compression Ratio (CR) vs Efficiency graph** to show thermodynamic trends  
 
-Net work output
+---
 
-Mean effective pressure
+## ⚙️ Codes  
 
-Torque, compression ratio, cut-off ratio
+### 🔹 Otto Cycle (`otto_cycle.m`)  
+- **Inputs:**  
+  - Compression ratio (r)  
+  - Initial pressure (p1)  
+  - Initial temperature (T1)  
+  - Heat added at constant volume (Qin)  
 
-Generates Pressure–Volume (P–V) diagrams for cycle visualization.
+- **Outputs:**  
+  - State variables (P1–P4, T1–T4)  
+  - Theoretical efficiency  
+  - Heat rejected & Net work done  
+  - Graphs:  
+    - P–V diagram  
+    - CR vs Efficiency  
 
-Analyzes the impact of varying compression ratio, cut-off ratio, and stroke length.
+---
 
-Comparative study of Otto vs Diesel cycles under different operating conditions.
+### 🔹 Diesel Cycle (`diesel_cycle.m`)  
+- **Inputs:**  
+  - Compression ratio (r)  
+  - Cut-off ratio (rc)  
+  - Initial pressure (p1)  
+  - Initial temperature (T1)  
+  - Heat added at constant pressure (Qin)  
 
-📊 Applications
+- **Outputs:**  
+  - State variables (P1–P4, T1–T4)  
+  - Theoretical efficiency  
+  - Heat rejected & Net work done  
+  - Graphs:  
+    - P–V diagram  
+    - CR vs Efficiency  
 
-Useful for students and researchers in thermodynamics, IC engine design, and performance optimization.
+---
 
-Provides insights into the trade-offs between different engine cycles.
+## 🚀 How to Run  
 
-⚙️ Tools & Technologies
-
-MATLAB (R2024a or compatible version)
-
-🚀 Getting Started
-
-Clone the repository:
-
-git clone https://github.com/yourusername/Otto-Diesel-Cycle-Analyzer.git
-
-
-Open the .m file in MATLAB.
-
-Run the script and input required parameters when prompted.
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/yourrepo.git
+   cd yourrepo
