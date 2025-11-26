@@ -16,7 +16,10 @@ This repository contains MATLAB codes for analyzing and simulating the **Otto Cy
 ## ⚙️ Codes  
 
 ### 🔹 Otto Cycle (`otto_cycle.m`)  
-- **Inputs:**  
+- **Inputs:**
+  - Cylinder Bore diameter(mm)
+  - Cylinder Stroke Length (mm)
+  - No. of cylinders
   - Compression ratio (r)  
   - Initial pressure (p1)  
   - Initial temperature (T1)  
